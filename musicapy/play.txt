@@ -1,0 +1,4 @@
+elimiar y condicionar si el archivo exixte 
+sudo ls * > archivo.txt # crea y guardar en un archivo con la lista de musica 
+
+ 

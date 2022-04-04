@@ -1,0 +1,10 @@
+<?php
+if(isset($_GET["segundos"]))
+{
+        $a=exec('sudo python /var/www/html/ecoger.py ' . $_GET["segundos] . ");
+echo $a
+
+}
+?>
+
+

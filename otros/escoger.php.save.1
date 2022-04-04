@@ -1,0 +1,18 @@
+<?php
+if(isset($_GET["segundos"]))
+{
+        $a=exec('sudo python /var/www/html/ecoger.py ' . $_GET["segundos"] . ' > /dev/null 2>/dev/null &');
+echo $a
+
+}
+?>
+
+
+
+
+<?php
+if(isset($_GET["tipo"]) && isset($_GET["segundos"]))
+{
+        echo shell_exec("python /home/pi/comando.py " . $_GET["tipo"] . " " . $_GET["segundos"] . " > /dev/null 2>/dev/null &");
+}
+?>sudo python /var/www/html/ecoger.py
